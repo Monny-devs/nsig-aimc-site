@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSIG AIMC/JHL</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>NSIG AIMC/JHL</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#apply">Apply</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Welcome to NSIG AIMC/JHL</h2>
+        <p>Pioneering the future of neurology research.</p>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a team dedicated to advancing neurology research and collaboration.</p>
+    </section>
+    <section id="team">
+        <h2>Our Team</h2>
+        <p>Meet our exceptional leaders and members.</p>
+    </section>
+    <section id="apply">
+        <h2>Apply for a Position</h2>
+        <form id="application-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="position">Position:</label>
+            <select id="position" name="position">
+                <option value="Vice President">Vice President</option>
+                <option value="Secretary">Secretary</option>
+                <option value="Member">Member</option>
+            </select>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@nsigaimc.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 NSIG AIMC/JHL. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("application-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Application submitted successfully!");
+        });
+    </script>
+</body>
+</html>
